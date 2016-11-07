@@ -1,0 +1,299 @@
+<HTML>
+<HEAD>
+	<TITLE>71% Blue</TITLE>
+	<STYLE tags='css/text'>
+	nav{
+		position: relative;
+	}
+	nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 250 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 250;
+
+}
+
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #009BFF  ; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 30px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: fixed;
+display: inline-table;
+top:-5px;
+right:25px;
+z-index: 1001;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000; /*borders between menu items */
+position: relative; 
+padding: 0px 0px; 
+text-align: center;
+}
+
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+height:60px;
+float: right;
+width: 250px;
+text-align: center;
+color: #2700FF;
+font-family: Herculanum;
+font-size: 60px;
+}
+
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #009BFF 0%, #009BFF   40%);
+background: -moz-linear-gradient(top, #009BFF   0%, #009BFF   40%);
+background: -webkit-linear-gradient(top, #009BFF   0%,#009BFF   40%);
+}
+
+
+
+nav ul ul {
+background: #A0DAFF; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; left:30px;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+nav ul ul li a{
+	text-decoration: none;
+}
+#dropdownmenu {
+	font-family:Copperplate;
+	color: blue;
+	font-size:30px;
+}
+#toptable {
+	border-color:blue;
+	position:fixed;
+	background-color:#A4E7FF;
+	z-index: 1001;
+}
+#bigpic {
+	position: relative;
+	z-index: -100;
+}
+#toprectangle {
+	width:1290px;
+	height:75px;
+	position: fixed;
+	top:0px;
+	left:-5px;
+	z-index: 1000;
+}
+#title {
+	position:absolute;
+	z-index: -1000;
+	left:390;
+
+}
+#titlefont {
+	font-size: 72px;
+}
+#texttable {
+	position: relative;
+	left:0px;
+}
+#first {
+	position: relative;
+	z-index: -10;
+}
+#background {
+	top:0px;
+	left:-7px;
+	width:102%;
+	height:100%;
+	z-index:-100000000;
+	position:fixed;
+}
+#link1{
+		color:#00B6FF;
+		background-color:lavender;
+		padding: 15px;
+		text-decoration: none;
+		position:relative;
+		-webkit-transition:  height 0.5s ease, opacity 0.5s ease;
+		-moz-transition: height 0.5s ease, opacity 0.5s ease;
+		-o-transition: height 0.5s ease, opacity 0.5s ease;
+		transition: height 0.5s ease, opacity 0.5s ease;
+	}
+	#link1:hover{
+		color:lavender;
+		background-color:#00B6FF;
+		padding: 15px;
+		text-decoration: none;
+		position:relative;
+
+	}
+	
+	#link2{
+		color:green;
+		background-color:#DAFF7D;
+		padding: 15px;
+		text-decoration: none;
+		position:relative;
+
+	}
+	#link2:hover{
+		color:#DAFF7D;
+		background-color:green;
+		padding: 15px;
+		text-decoration: none;
+		position:relative;
+
+	}
+	#link3{
+		color:red;
+		background-color:pink;
+		padding: 15px;
+		text-decoration: none;
+		position:relative;
+
+	}
+	#link3:hover{
+		color:pink;
+		background-color:red;
+		padding: 15px;
+		text-decoration: none;
+		position:relative;
+
+	}
+	
+	#link4{
+		color:orange;
+		background-color:#FDFF7D;
+		padding: 15px;
+		text-decoration: none;
+		position:relative;
+		z-index: 20;
+
+	}
+	#link4:hover{
+		color:#FDFF7D;
+		background-color:orange;
+		padding: 15px;
+		text-decoration: none;
+		position:relative;
+		z-index: 20;
+
+	}
+	#font1{
+		font-family:papyrus;
+		font-size:24px;
+	}
+	#box{
+		width: 600px;
+		height: 300px;
+
+		top:-100px;
+	}
+	</STYLE>
+
+<BODY bgcolor = '#A4E7FF'>
+<NAV>
+	<UL>
+		<LI><B>Menu</B>
+			<UL>
+				<LI><A href= 'Home Page.html' target='_blank'><FONT id = 'dropdownmenu'>Home</A></LI>
+				<LI><A href= 'About Us.html' target='_blank'><FONT id = 'dropdownmenu'>About Us</A></LI>
+				<LI><A href= 'Marine Life.html' target='_blank'><FONT id = 'dropdownmenu'>Marine Life</A></LI>
+				<LI><A href= 'Save The Ocean!.html' target='_blank'><FONT id = 'dropdownmenu'>Save the Ocean</A></LI>
+				<LI><A href= 'Other Websites.html' target='_blank'><FONT id = 'dropdownmenu'>Other Websites</A></LI>
+				<LI><A href= 'Citations.html' target='_blank'><FONT id = 'dropdownmenu'>Citations</A></LI>		
+			</UL>
+		</LI>
+	</UL>
+</NAV>
+
+
+
+<TABLE width = '920' border = '5px' id = 'toptable'>
+	<TR>
+		<TD><CENTER><FONT size = 7 color = 'blue'>71% Blue</FONT></CENTER></TD>
+	</TR>
+</TABLE>
+
+
+<BR><BR><BR>
+<TABLE width = '500' border = '0px' id = 'title'>
+	<TR>
+		<TD><CENTER><FONT id = 'titlefont' face = 'Marker Felt' color = '#000076'>About Us</FONT></CENTER></TD>
+	</TR>
+</TABLE>
+
+<BR><BR><BR>
+
+
+
+
+
+
+
+
+
+
+<CENTER>
+<TABLE width = '1000' id = 'texttable'>
+	<TR colspan = 2>
+		<FONT size = 4 face = 'Baskerville' color = #17159F><I><B>Creators:</B> Paula Hsiao, Claire Chung, Sammi Shih, and Yujinia Wang<BR>
+		<B>Special thanks</B> to Mr. Pilon, who taught us code and helped us debug problems. </FONT></TD>
+	</TR>
+</TABLE>
+<BR>
+<TABLE>
+	<TR>
+		<TD width = 500><FONT face = 'Didot' size = '3'>This is our project for our Informational Technology class. We were told to create a website that solves a problem using the HTML and CSS code we were taught. The idea of doing our project on the deteriorating conditions of marine life intrigued us immediately because you would think that people would know about and be more aware of what is happening to the ocean since it is something we have all known since we were little, little kids. <BR><BR>However, since it is such a stable and steadfast part of our lives, we assume it will be there forever, but the reality of the situation is that since we assume it is going to be there forever, we reap as much as we want from the ocean, not thinking about the toll it is taking on the ocean. </FONT><BR><BR></TD>
+
+		<TD><IMG src = 'jellyfish.jpg' height = '300px' id = 'first'>
+	</TR>
+</TABLE>
+
+<IMG src = toprectangle.png id = toprectangle>
+<BR>
+<CENTER>
+<TABLE>
+	<TR>
+		<TD><DIV id = 'link1' onmouseover = "bigpic.src = 'Paula.png'"><FONT id = 'font1'>Paula Hsiao</FONT></DIV></TD>
+		<TD><DIV id = 'link2' onmouseover = "bigpic.src = 'Claire.png'"><FONT id = 'font1'>Claire Chung</FONT><DIV></TD>
+		<TD><DIV id = 'link3' onmouseover = "bigpic.src = 'Sammi.png'" ><FONT id = 'font1'>Sammi Shih</FONT></DIV></TD>
+		<TD><DIV id = 'link4' onmouseover = "bigpic.src = 'Yujinia.png'"><FONT id = 'font1'>Yujinia Wang</FONT></DIV></TD>
+	</TR>
+	<TR>
+		<TD colspan = 4><IMG src = 'Paula.png' width = 650 name = 'bigpic' align = middle></TD>
+	</TR>
+</TABLE>
+
+<IMG src = '65thfiw.png' id = 'background'>
+
+
+
+
+
+
+
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,205 @@
+<HTML>
+<HEAD>
+	<TITLE>71% Blue</TITLE>
+	<STYLE tags='css/text'>
+	nav{
+		position: relative;
+	}
+	nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 250 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 250;
+
+}
+
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #009BFF  ; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 30px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: fixed;
+display: inline-table;
+top:-5px;
+right:25px;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000; /*borders between menu items */
+position: relative; 
+padding: 0px 0px; 
+text-align: center;
+}
+
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+height:60px;
+float: right;
+width: 250px;
+text-align: center;
+color: #2700FF;
+font-family: Herculanum;
+font-size: 60px;
+}
+
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #009BFF 0%, #009BFF   40%);
+background: -moz-linear-gradient(top, #009BFF   0%, #009BFF   40%);
+background: -webkit-linear-gradient(top, #009BFF   0%,#009BFF   40%);
+}
+
+
+
+nav ul ul {
+background: #A0DAFF; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; left:30px;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+nav ul ul li a{
+	text-decoration: none;
+}
+#dropdownmenu {
+	font-family:Copperplate;
+	color: blue;
+	font-size:30px;
+}
+#toptable {
+	border-color:blue;
+	position:fixed;
+	background-color:#A4E7FF;
+}
+#bigpic {
+	position: relative;
+	z-index: -100;
+}
+#toprectangle {
+	width:1290px;
+	height:75px;
+	position: fixed;
+	top:0px;
+	left:-5px;
+	z-index: -1;
+}
+#title {
+	position:relative;
+	z-index: -1000;
+	left:390;
+
+}
+#titlefont {
+	font-size: 72px;
+}
+#background {
+	top:0px;
+	left:-7px;
+	width:102%;
+	height:100%;
+	z-index:-100000000;
+	position:fixed;
+}
+#table {
+	position:relative;
+	z-index: -1000;
+}
+	
+	</STYLE>
+	<BODY bgcolor = '#A4E7FF'>
+
+<NAV>
+	<UL>
+		<LI><B>Menu</B>
+			<UL>
+				<LI><A href= 'Home Page.html' target='_blank'><FONT id = 'dropdownmenu'>Home</A></LI>
+				<LI><A href= 'About Us.html' target='_blank'><FONT id = 'dropdownmenu'>About Us</A></LI>
+				<LI><A href= 'Marine Life.html' target='_blank'><FONT id = 'dropdownmenu'>Marine Life</A></LI>
+				<LI><A href= 'Save The Ocean!.html' target='_blank'><FONT id = 'dropdownmenu'>Save the Ocean</A></LI>
+				<LI><A href= 'Other Websites.html' target='_blank'><FONT id = 'dropdownmenu'>Other Websites</A></LI>
+				<LI><A href= 'Citations.html' target='_blank'><FONT id = 'dropdownmenu'>Citations</A></LI>		
+			</UL>
+		</LI>
+	</UL>
+</NAV>
+
+
+
+<TABLE width = '920' border = '5px' id = 'toptable'>
+	<TR>
+		<TD><CENTER><FONT size = 7 color = 'blue'>71% Blue</FONT></CENTER></TD>
+	</TR>
+</TABLE>
+
+<BR><BR><BR>
+<TABLE width = '500' border = '0px' id = 'title'>
+	<TR>
+		<TD><CENTER><FONT id = 'titlefont' face = 'Marker Felt' color = '#000076'>Other Websites</FONT></CENTER></TD>
+	</TR>
+</TABLE>
+<CENTER>
+<TABLE width = '800' id = 'table'>
+	<TR>
+		<TD><FONT face = 'Comic Sans MS' color = '#185FFF' style = "text-align: center">Here are some of the websites that we found that also talks about saving the oceans. They're really good for kids and adults alike and provides some great information about saving the ocean! </FONT></TD>
+	</TR>
+</TABLE>
+</CENTER>
+
+
+<IMG src = toprectangle.png id = toprectangle>
+<IMG src = '65thfiw.png' id = 'background'>
+
+<BR><BR>
+<CENTER>
+<TABLE width='1000' id = 'table'>
+	<TR>
+		<TD><CENTER><B><FONT size='4' face = 'Comic Sans MS' color = '#17159F' style = "text-align: center">Website 1:</TD>
+	</TR>
+	<TR>
+		<TD><CENTER><FONT face='Hoefler' size='4' color='#FF5733'><A href='http://www.pegasusfoundation.org/marine-life-species-endangered-of-extinction/' target='_blank'>http://www.pegasusfoundation.org/marine-life-species-endangered-of-extinction/</A><BR><BR>This website talks about the different issues of endangered species face and why these animals are going extinct. With it’s clear cut organization, this website is easy to understand and makes you want to help the animals. <BR><BR><BR><BR></FONT></TD>
+	</TR>
+	<TR>
+		<TD><CENTER><B><FONT size='4' face = 'Comic Sans MS' color = '#17159F' style = "text-align: center">Website 2:</TD>
+	</TR>
+	<TR>
+		<TD><CENTER><FONT face='Hoefler' size='4' color='#FB8300'><A href='http://www.takepart.com/article/2016/09/14/large-marine-animals-are-going-be-hit-hardest-mass-extinction' target='_blank'>http://www.takepart.com/article/2016/09/14/large-marine-animals-are-going-be-hit-hardest-mass-extinction</A><BR><BR>This website talks about how we are soon to face a 6th extinction  if we don’t help thae animals and what the 6th extinction means for us humans. <BR><BR><BR><BR></FONT></TD>
+	<TR>
+		<TD><CENTER><B><FONT size='4' face = 'Comic Sans MS' color = '#17159F' style = "text-align: center">Website 3:</TD>
+	</TR>
+	<TR>
+		<TD><CENTER><FONT face='Hoefler' size='4' color='#16B900'><A href='http://wwf.panda.org/what_we_do/how_we_work/our_global_goals/oceans/ocean_risk/' target='_blank'>http://wwf.panda.org/what_we_do/how_we_work/our_global_goals/oceans/ocean_risk/</A><BR><BR>This is a website that looks targeted towards kids with it’s fun colors and fonts. It’s great for finding out what is causing the collapse of the ocean but not exactly for how to solve these problems.<BR><BR><BR><BR></FONT></CENTER></BR></TD>
+	</TD>
+	<TR>
+		<TD><CENTER><B><FONT size='4' face = 'Comic Sans MS' color = '#17159F' style = "text-align: center">Website 4:</TD>
+	</TR>
+	<TR>
+		<TD><CENTER><FONT face='Hoefler' size='4' color='#9F18FF'><A href='https://www.theoceancleanup.com/' target='_blank'>https://www.theoceancleanup.com/</A><BR><BR>This I think, is my favorite website because not only does the website talk about how the ocean is, it also talks about the different ways you can help. My favorite part of the website however, is that they update you on ocean cleanups and technology.<BR><BR><BR><BR></FONT></CENTER></TD>
+	</TR>
+</TABLE>
+
+
+
+
+
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,302 @@
+<HTML>
+<HEAD>
+	<TITLE>71% Blue</TITLE>
+	<STYLE tags='css/text'>
+	nav{
+		position: relative;
+	}
+	nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 250 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 250;
+
+}
+
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #009BFF  ; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 30px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: fixed;
+display: inline-table;
+top:-5px;
+right:25px;
+z-index: 100;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000; /*borders between menu items */
+position: relative; 
+padding: 0px 0px; 
+text-align: center;
+}
+
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+height:60px;
+float: right;
+width: 250px;
+text-align: center;
+color: #2700FF;
+font-family: Herculanum;
+font-size: 60px;
+}
+
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #009BFF 0%, #009BFF   40%);
+background: -moz-linear-gradient(top, #009BFF   0%, #009BFF   40%);
+background: -webkit-linear-gradient(top, #009BFF   0%,#009BFF   40%);
+}
+
+
+
+nav ul ul {
+background: #A0DAFF; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; left:30px;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+nav ul ul li a{
+	text-decoration: none;
+}
+#dropdownmenu {
+	font-family:Copperplate;
+	color: blue;
+	font-size:30px;
+}
+#toptable {
+	border-color:blue;
+	position:fixed;
+	background-color:#A4E7FF;
+	z-index: 100;
+}
+#bigpic {
+	position: relative;
+	z-index: -100;
+}
+#toprectangle {
+	width:1290px;
+	height:75px;
+	position: fixed;
+	top:0px;
+	left:-5px;
+	z-index: 99;
+}
+#title {
+	position:absolute;
+	z-index: -1000;
+	left:390;
+
+}
+#titlefont {
+	font-size: 72px;
+}
+#background {
+	top:0px;
+	left:-7px;
+	width:102%;
+	height:100%;
+	z-index:-100000000;
+	position:fixed;
+}
+
+#OnTheVergeofExtinction {
+	height: 425px;
+
+	position: absolute;
+	top:194px;
+	left:5;
+	z-index: -4;
+}
+#A1{
+	position: relative;
+	z-index: 2;
+	top:195px;
+	left:53;
+    height:210px;
+    width:413px;
+    opacity: 0;
+    -webkit-transition:  height 0.5s ease, opacity 0.5s ease;
+	-moz-transition: height 0.5s ease, opacity 0.5s ease;
+	-o-transition: height 0.5s ease, opacity 0.5s ease;
+	transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+#TheSixthExtinction {
+	height: 425px;
+	width:490;
+	position: absolute;
+	top:410px;
+	left:408px;
+	z-index: -4;
+}
+#A2{
+    position: relative;
+	z-index: 20;
+	top:408px;
+	left:9;
+    height:225px;
+    width:455px;
+    opacity: 0;
+    -webkit-transition:  height 0.5s ease, opacity 0.5s ease;
+	-moz-transition: height 0.5s ease, opacity 0.5s ease;
+	-o-transition: height 0.5s ease, opacity 0.5s ease;
+	transition: height 0.5s ease, opacity 0.5s ease;
+}
+#EndangeredSpeciesAct {
+
+	height: 425px;
+	position: absolute;
+	top:100px;
+	left:800px;
+	z-index: -4;
+}
+#A3{
+	position: relative;
+	z-index: 20;
+	top:-137px;
+	left:827;
+    height:215px;
+    width:430px;
+    opacity: 0;
+   
+    -webkit-transition:  height 0.5s ease, opacity 0.5s ease;
+	-moz-transition: height 0.5s ease, opacity 0.5s ease;
+	-o-transition: height 0.5s ease, opacity 0.5s ease;
+	transition: height 0.5s ease, opacity 0.5s ease;
+}
+#WhenSharksHadFins {
+	height: 415px;	
+	position: absolute;
+	top:800px;
+	left:100px;
+	z-index: -4;
+}
+#A4{
+	position: relative;
+	z-index: 20;
+	top:560px;
+	left:-331;
+    height:225px;
+    width:430px;
+    opacity: 0;
+    -webkit-transition:  height 0.5s ease, opacity 0.5s ease;
+	-moz-transition: height 0.5s ease, opacity 0.5s ease;
+	-o-transition: height 0.5s ease, opacity 0.5s ease;
+	transition: height 0.5s ease, opacity 0.5s ease;
+}
+#TaijiDolphinHunts {
+
+	height: 415px;
+	position: absolute;
+	top:1000px;
+	left:600px;
+	z-index: -4;
+}
+#A5{
+	position: relative;
+	z-index: -2;
+	top:525px;
+	left:610;
+    height:225px;
+    width:430px;
+    opacity: 0;
+    -webkit-transition:  height 0.5s ease, opacity 0.5s ease;
+	-moz-transition: height 0.5s ease, opacity 0.5s ease;
+	-o-transition: height 0.5s ease, opacity 0.5s ease;
+	transition: height 0.5s ease, opacity 0.5s ease;
+}
+#text {
+	font-family: courier;
+	font-size: 36px;
+	color:blue;
+	text-decoration: bold;
+	text-align: center;
+}
+
+	
+	</STYLE>
+	<BODY bgcolor = '#A4E7FF'>
+
+<NAV>
+	<UL>
+		<LI><B>Menu</B>
+			<UL>
+				<LI><A href= 'Home Page.html' target='_blank'><FONT id = 'dropdownmenu'>Home</A></LI>
+				<LI><A href= 'About Us.html' target='_blank'><FONT id = 'dropdownmenu'>About Us</A></LI>
+				<LI><A href= 'Marine Life.html' target='_blank'><FONT id = 'dropdownmenu'>Marine Life</A></LI>
+				<LI><A href= 'Save The Ocean!.html' target='_blank'><FONT id = 'dropdownmenu'>Save the Ocean</A></LI>
+				<LI><A href= 'Other Websites.html' target='_blank'><FONT id = 'dropdownmenu'>Other Websites</A></LI>
+				<LI><A href= 'Citations.html' target='_blank'><FONT id = 'dropdownmenu'>Citations</A></LI>		
+			</UL>
+		</LI>
+	</UL>
+</NAV>
+
+
+
+<TABLE width = '920' border = '5px' id = 'toptable'>
+	<TR>
+		<TD><CENTER><FONT size = 7 color = 'blue'>71% Blue</FONT></CENTER></TD>
+	</TR>
+</TABLE>
+
+<BR><BR><BR>
+<TABLE width = '500' border = '0px' id = 'title'>
+	<TR>
+		<TD><CENTER><FONT id = 'titlefont' face = 'Marker Felt' color = '#000076'>Save The Ocean!</FONT></CENTER></TD>
+	</TR>
+</TABLE>
+
+
+
+<BR><BR><BR>
+
+<IMG src = toprectangle.png id = toprectangle>
+<IMG src = '65thfiw.png' id = 'background'>
+
+<IMG src = 'circle1.png' id = 'OntheVergeofExtinction' onmouseover="">
+<IMG src = 'A1.png' id = 'A1' onmouseover="document.getElementById('A1').style.opacity='1'" onmouseout="document.getElementById('A1').style.opacity='0'">
+
+<IMG src = 'circle2.png' id = 'TheSixthExtinction' onmouseover="">
+<IMG src = 'A2.png' id = 'A2' onmouseover="document.getElementById('A2').style.opacity='1'" onmouseout="document.getElementById('A2').style.opacity='0'">
+
+<IMG src = 'circle3.png' id = 'EndangeredSpeciesAct' onmouseover="">
+<IMG src = 'A3.png' id = 'A3' onmouseover="document.getElementById('A3').style.opacity='1'" onmouseout="document.getElementById('A3').style.opacity='0'">
+
+<IMG src = 'circle4.png' id = 'WhenSharksHadFins' onmouseover=""></DIV>
+<IMG src = 'A4.png' id = 'A4' onmouseover="document.getElementById('A4').style.opacity='1'" onmouseout="document.getElementById('A4').style.opacity='0'">
+
+
+<IMG src = 'circle5.png' id = 'TaijiDolphinHunts' onmouseover="">
+<IMG src = 'A5.png' id = 'A5' onmouseover="document.getElementById('A5').style.opacity='1'" onmouseout="document.getElementById('A5').style.opacity='0'">
+
+
+
+
+
+
+
+
+</BODY>
+</HTML>

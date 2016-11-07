@@ -1,0 +1,430 @@
+<HTML>
+<HEAD>
+	<TITLE>71% Blue</TITLE>
+	<STYLE tags='css/text'>
+	nav{
+		position: relative;
+	}
+	nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 250 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 250;
+
+}
+
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #009BFF  ; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 30px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: fixed;
+z-index: 1001;
+display: inline-table;
+top:-5px;
+right:25px;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000; /*borders between menu items */
+position: relative; 
+padding: 0px 0px; 
+text-align: center;
+}
+
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+height:60px;
+float: right;
+width: 250px;
+text-align: center;
+color: #2700FF;
+font-family: Herculanum;
+font-size: 60px;
+}
+
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #009BFF 0%, #009BFF   40%);
+background: -moz-linear-gradient(top, #009BFF   0%, #009BFF   40%);
+background: -webkit-linear-gradient(top, #009BFF   0%,#009BFF   40%);
+}
+
+
+
+nav ul ul {
+background: #A0DAFF; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; left:30px;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+nav ul ul li a{
+	text-decoration: none;
+}
+
+#dropdownmenu {
+	font-family:Copperplate;
+	color: blue;
+	font-size:30px;
+}
+#toptable {
+	border-color:blue;
+	position:fixed;
+	background-color:#A4E7FF;
+	z-index: 1001;
+}
+#bigpic {
+	position: relative;
+	z-index: -100;
+}
+#toprectangle {
+	width:1290px;
+	height:75px;
+	position: fixed;
+	top:0px;
+	left:-5px;
+	z-index: 1000;
+}
+#title {
+	position:absolute;
+	z-index: -1000;
+	left:390;
+
+}
+#titlefont {
+	font-size: 72px;
+}
+#OntheVergeofExtinction1 {
+	position: relative;
+	left:50px;
+	z-index: -1000;
+}
+#OntheVergeofExtinction2 {
+	position: relative;
+	left:800px;
+	z-index: -1000;
+}
+
+#text {
+	font-size:16px;
+}
+#first {
+	left:475px;
+	top:-825px;
+	position: relative;
+	z-index: -100;
+	height:330px;
+	width: 750px;
+}
+#second {
+	position: relative;
+	z-index: -100;
+	left:50px;
+	top:-800;
+	width:700;
+	height:350;
+}
+
+#background {
+	top:0px;
+	left:-7px;
+	width:102%;
+	height:100%;
+	z-index:-100000000;
+	position:fixed;
+}
+#video {
+	right:-100px;
+	top:-330px;
+	position: relative;
+	z-index: 0;
+	height:250px;
+	width: 390px;
+}
+#TheSixthExtinction {
+	position: relative;
+	top:100;
+	left:810px;
+	z-index: -1000;
+}
+#third {
+	position: relative;
+	z-index: -100;
+	height:600px;
+	width: 700px;
+	top: -790px;
+	left: 50px;
+
+
+}
+#B1 {
+	position: relative;
+	top:-850px;
+	right:340;
+	z-index: -100;
+}
+#D4 {
+	position: relative;
+	top:-1000px;
+	left:80;
+}
+#D2 {
+	position: relative;
+	top:-500px;
+	right:-170;
+}
+#I1 {
+	position: relative;
+	top:-1300px;
+	left:560px;
+}
+#I2 {
+	position: relative;
+	top:-1550px;
+	left:80px;
+}
+#I3 {
+	position: relative;
+	top:-830px;
+	right:620px;
+}
+#I4 {
+	position: relative;
+	top:-1230;
+	left:500;
+}
+#D3 {
+	position: relative;
+	top:-1300px;
+	left:600;
+}
+#B2 {
+	position: relative;
+	top:-1150px;
+	left:300px;
+}
+#B5 {
+	position: relative;
+	top:-1100px;
+	width:1100;
+}
+#F1 {
+	position: relative;
+	left:80px;
+	top:-1500;
+}
+#F2 {
+	position: relative;
+	top:-3000px;
+}
+
+
+	
+	</STYLE>
+	<BODY bgcolor = '#A4E7FF'>
+
+<NAV>
+	<UL>
+		<LI><B>Menu</B>
+			<UL>
+				<LI><A href= 'Home Page.html' target='_blank'><FONT id = 'dropdownmenu'>Home</A></LI>
+				<LI><A href= 'About Us.html' target='_blank'><FONT id = 'dropdownmenu'>About Us</A></LI>
+				<LI><A href= 'Marine Life.html' target='_blank'><FONT id = 'dropdownmenu'>Marine Life</A></LI>
+				<LI><A href= 'Save The Ocean!.html' target='_blank'><FONT id = 'dropdownmenu'>Save the Ocean</A></LI>
+				<LI><A href= 'Other Websites.html' target='_blank'><FONT id = 'dropdownmenu'>Other Websites</A></LI>
+				<LI><A href= 'Citations.html' target='_blank'><FONT id = 'dropdownmenu'>Citations</A></LI>	
+			</UL>
+		</LI>
+	</UL>
+</NAV>
+
+
+
+<TABLE width = '920' border = '5px' id = 'toptable'>
+	<TR>
+		<TD><CENTER><FONT size = 7 color = 'blue'>71% Blue</FONT></CENTER></TD>
+	</TR>
+</TABLE>
+
+<BR><BR><BR>
+<TABLE width = '500' border = '0px' id = 'title'>
+	<TR>
+		<TD><CENTER><FONT id = 'titlefont' face = 'Marker Felt' color = '#000076'>Marine Life</FONT></CENTER></TD>
+	</TR>
+</TABLE>
+
+<BR><BR><BR>
+
+<IMG src = toprectangle.png id = toprectangle>
+<TABLE id = 'OntheVergeofExtinction1' width = '400px'>
+	<TR>
+		<TD><FONT size = '6' color = '#001F5D'>On the Verge of Extinction!</FONT></TD>
+	</TR>
+	<TR>
+		<TD><FONT id = text face = 'Comic Sans MS' color = '#17159F'>Humans used to think that the ocean was invulnerable to overexploitation. The unexplored depths of the blue gave off a mysterious vibe and in a way convinced us that there was always going to be more fish, more life, more ocean. <BR><BR>In recent times, humans have been discovering truly how great the toll that overfishing, pollution, and all this has done to marine life. There are 146 endangered and threatened marine species <I>(according to the National Oceanic and Atmospheric Association)</I> and a lot of them are animals you know very well or even eat! The list includes salmon, sturgeon, beluga whales, and corals, just to name a few.</TD>
+	</TR>
+</TABLE>
+<TABLE id = 'OntheVergeofExtinction2' width = 400px >
+	<TR>
+		<TD><FONT id = text face = 'Comic Sans MS' color = '#17159F'>There are many factors going into the death of these animals; pollution, caught in fishing nets, hit by boats, overexploitation, the list goes on and on. The worst part about the decrease in marine life is that it is all caused by us. <BR><BR>We are the reason why they are dying so rapidly and we simply just do not care. We still eat shark fins, still hunt narwhals for their horns, still eat tuna, still take the shells from the hermit crabs, we still do all these things that are harming the animals and even though we know it is harmful, we do not care. Animals that have taken millions of years to evolve, and are invaluable to our ecosystems, now continues to disappear from places where they used to be flourishing.</FONT></TD>
+	</TR>
+</TABLE>
+
+<TABLE id = 'TheSixthExtinction' width = '400px'>
+	<TR>
+		<TD><FONT size = '6' color = '#001F5D'>The Sixth Extinction</TD>
+	</TR>
+	<TR>
+		<TD><FONT id = text face = 'Comic Sans MS' color = '#17159F'>The video below shows the five extinctions and how marine animals, coral reefs can be the next extinction of the world.</FONT></TD>
+	</TR>
+</TABLE>
+
+<IMG src = 'image1.png' id = first>
+<IMG src = '65thfiw.png' id = 'background'>
+<IMG src = 'image2.png' id = 'second'>
+<iframe src="https://www.youtube.com/embed/z9gHuAwxwAs" id = video frameborder="0" allowfullscreen></iframe>
+<IMG src = 'coral.png' id ='third'>
+<BR><BR>
+
+
+
+<CENTER>
+<TABLE width = 450px border = 0 id = 'B1'>
+	<TR>
+		<TD colspan = 1 ><FONT size = '6' color = '#001F5D'>Endangered Species Act</FONT><BR><I><FONT size = '5' color = '#001F5D'>How Bad Is The Ocean Right Now?</I><BR><BR></FONT></TD>
+	</TR>
+	<TR>
+		<TD><FONT id = text face = 'Comic Sans MS' color = '#17159F'>As of right now, several resources have already listed the extinction of some marine animals in the near future: <BR><BR><I><B>All coral reefs could be gone by 2050.</B> - World Resources Institute<BR><BR><B>Oysters are functionally extinct.</B> - BioScience</I> <BR><BR>This is mostly due to their populations rapidly decreasing over the last few years from diseases and over harvesting of marine life.<BR><BR></TD>
+	</TR>
+</TABLE>
+<IMG src = 'Dead coral.jpg' height = 335 width = 650 id = I4>
+
+
+
+
+
+<IMG src = 'sea surface.png' height = 350 id = I3>
+
+<TABLE id = B2 border = 0 width = 500>
+	<TR>
+		<TD><FONT id = text face = 'Comic Sans MS' color = '#17159F'>The ocean has also been having split temperatures, some <BR>places being colder and some hotter, which can be good or bad<BR> depending on how you look at it because the temperature of <BR>water plays a part in the weather and climate as well. <BR><BR>On top of all of that ocean acidity has increased by 30% due<BR> to the 530 billion tons of carbon dioxide absorbed by the <BR>water. The more acidic water affects the shells of certain <BR>animals like crabs by dissolving them before they can grow and mature.<BR><BR>People have already tried to preserve the marine animals by making movies or participating in cleanups and other activities.</TD>
+		
+	</TR>
+</TABLE>
+
+<TABLE id = B5>
+	<TR>
+		<TD><FONT id = text face = 'Comic Sans MS' color = '#17159F'><BR>Most importantly, a law has been passed by the Departments of the Interior, Agriculture, and Defense called the Endangered Species Conservation Act and Marine Mammal Protection Act of 1972 in order to conserve the endangered animals. It prevents the use of endangered animals for food, fur, and other commercial uses which was a good call by Congress,  although it’s not helping control the damage that much. <BR><BR>People are constantly selling animal products illegally or through the black market. They think that these things are okay, as long as they’re not caught but they’re still harming the ocean. By using these animals for their own benefit, they are taking away innocent fish that could’ve reproduced and replenished the fish population. </TD>
+	</TR>
+</TABLE>
+</CENTER>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TABLE width = '450px' border = 0 id = D4>
+	<TR>
+		<TD><FONT size = '6' color = '#001F5D'>When Sharks Had Fins<BR><BR></FONT></TD>
+	</TR>
+	<TR>
+		<TD style="width:450px"><FONT id = text face = 'Comic Sans MS' color = '#17159F'><I><B>Have you ever heard of shark fin soup?</B></I><BR><BR><FONT id = text face = 'Comic Sans MS' color = '#17159F'>The majority of you should know what that is because it has become such a normal and common thing in certain countries such as China or Vietnam. Surprise! It was once not common to slice off most if not all of the fins of the sharks and then throw them back in the ocean to let them fend for themselves. <BR><BR>Yeah that is right! They throw the shark back in the ocean and just leave them to die after they have taken all they need to from the shark. They don’t even have the decency to put the sharks out of their misery and leave them to suffer some more. </TD>
+	</TR>
+</TABLE>	
+<IMG src = 'Shark_finning_diagram.png' width = 700px id = I1>
+
+<TABLE border = 0 id = D3>
+	<TR>
+		<TD style="width:600px"><FONT id = text face = 'Comic Sans MS' color = '#17159F'><BR>Even though overexploitation has been happening for a while now, there was a time when people weren’t mistreating fish. In those days the fish were way bigger and in larger numbers than now. <BR><BR>According to the Natural Sciences article New Zealand had about 27,000 southern whales in the 1800s, (before oil hunters started to harpoon whales in large numbers) that’s about 30 times as many whales as they have right now! Around the same time, British researchers said that orcas and porpoises would come in such large numbers on Cornwall’s shores that they would often darken the waters. Sadly, those days are long gone and the animals are smaller and less diverse than they were just a couple years ago. </TD>
+		
+	</TR>
+</TABLE>
+
+
+<IMG src = 'shark1.png' height = 260 id = I2>
+<BR><BR>
+<TABLE id = 'F1' width = 1100>
+	<TR>
+		<TD><FONT size = '6' color = '#001F5D'>Ways to Help<BR></TD>
+	</TR>
+	<TR>
+		<TD><FONT id = text face = 'Comic Sans MS' color = '#17159F'>
+		<OL type = 1>
+			<LI>Use fewer plastic products. A lot of the time, plastic that we use ends up in the ocean which isn’t good, not only for the ocean itself, but for the thousands of marine animals who digest the plastic or whose habitats are destroyed.</LI><BR>
+
+			<LI>Take care of the beaches, clean up after yourself. You can appreciate the ocean without needing to take corals or leaving trash behind. Even though you don’t think the shells matter since they’re not in the ocean, they still affect the ocean. Also by leaving trash on the beach, you create more opportunities for crabs to use the trash as a home or for the trash to end up in the waters. </LI><br>
+
+			<LI>Keep in mind how much carbon you use everyday. This should go not only for protecting the ocean but for everything. This can help reduce the climate changes on the ocean and there are many ways you can do this. Taking the stairs, biking instead of taking the car, there are many ways you can reduce your carbon footprint and that little action will make a big difference. </LI><BR>
+
+			<LI>Supporting organizations that protect the oceans. This is kind of tying in to why we need to make the website but there are lots of organizations that are fighting to protect ocean and marine life. You can help them by simply donating or if you don’t have the money, volunteering if they are located near you. </LI></OL><BR></TD>
+	</TR>
+</TABLE>
+</CENTER>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</BODY>
+</HTML>
+
+

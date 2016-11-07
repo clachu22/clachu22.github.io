@@ -1,0 +1,198 @@
+<HTML>
+<HEAD>
+	<TITLE>71% Blue</TITLE>
+	<STYLE tags='css/text'>
+	nav{
+		position: relative;
+	}
+	nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 250 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 250;
+
+}
+
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #009BFF  ; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 30px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: fixed;
+z-index: 51;
+display: inline-table;
+top:-5px;
+right:25px;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000; /*borders between menu items */
+position: relative; 
+padding: 0px 0px; 
+text-align: center;
+}
+
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+height:60px;
+float: right;
+width: 250px;
+text-align: center;
+color: #2700FF;
+font-family: Herculanum;
+font-size: 60px;
+}
+
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #009BFF 0%, #009BFF   40%);
+background: -moz-linear-gradient(top, #009BFF   0%, #009BFF   40%);
+background: -webkit-linear-gradient(top, #009BFF   0%,#009BFF   40%);
+}
+
+
+
+nav ul ul {
+background: #A0DAFF; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; left:30px;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+nav ul ul li a{
+	text-decoration: none;
+}
+#dropdownmenu {
+	font-family:Copperplate;
+	color: blue;
+	font-size:30px;
+}
+#toptable {
+	border-color:blue;
+	position:fixed;
+	background-color:#A4E7FF;
+	z-index: 51;
+}
+#bigpic {
+	position: relative;
+	z-index: -100;
+}
+#toprectangle {
+	width:1290px;
+	height:75px;
+	background: #A4E7FF;
+	position: fixed;
+	top:0px;
+	left:-5px;
+	z-index: 50;
+}
+#title {
+	position:absolute;
+	z-index: -1000;
+	left:390;
+
+}
+#titlefont {
+	font-size: 72px;
+}
+#background {
+	top:0px;
+	left:-7px;
+	width:102%;
+	height:100%;
+	z-index:-100000000;
+	position:fixed;
+}
+#texttable {
+	position:relative;
+	z-index: 0;
+}
+	
+	</STYLE>
+	<BODY bgcolor = '#A4E7FF'>
+
+<NAV>
+	<UL>
+		<LI><B>Menu</B>
+			<UL>
+				<LI><A href= 'Home Page.html' target='_blank'><FONT id = 'dropdownmenu'>Home</A></LI>
+				<LI><A href= 'About Us.html' target='_blank'><FONT id = 'dropdownmenu'>About Us</A></LI>
+				<LI><A href= 'Marine Life.html' target='_blank'><FONT id = 'dropdownmenu'>Marine Life</A></LI>
+				<LI><A href= 'Save The Ocean!.html' target='_blank'><FONT id = 'dropdownmenu'>Save the Ocean</A></LI>
+				<LI><A href= 'Other Websites.html' target='_blank'><FONT id = 'dropdownmenu'>Other Websites</A></LI>
+				<LI><A href= 'Citations.html' target='_blank'><FONT id = 'dropdownmenu'>Citations</A></LI>		
+			</UL>
+		</LI>
+	</UL>
+</NAV>
+
+
+
+<TABLE width = '920' border = '5px' id = 'toptable'>
+	<TR>
+		<TD><CENTER><FONT size = 7 color = 'blue'>71% Blue</FONT></CENTER></TD>
+	</TR>
+</TABLE>
+
+<BR><BR><BR>
+<TABLE width = '500' border = '0px' id = 'title'>
+	<TR>
+		<TD><CENTER><FONT id = 'titlefont' face = 'Marker Felt' color = '#000076'>Citations</FONT></CENTER></TD>
+	</TR>
+</TABLE>
+
+<BR><BR><BR>
+
+<IMG src = toprectangle.png id = toprectangle>
+<CENTER>
+<TABLE width = 1000 id = 'texttable'>
+	<TR>
+		<TD>
+			<FONT color = 'black' size = 3 face = 'Comic Sans MS'>
+	Donovan, T. (June 20, 2011). State Of The Ocean: 'Shocking' Report Warns Of Mass Extinction From Current Rate Of Marine Distress. Retrieved September 26, 2016 from <A href = "http://www.huffingtonpost.com/2011/06/20/ipso-2011-ocean-report-mass-extinction_n_880656.html" target = '_blank'>http://www.huffingtonpost.com/2011/06/20/ipso-2011-ocean-report-mass-extinction_n_880656.html</A>
+	<BR><BR>
+	(August 5, 1999). Temperature Trackers Watch Our Watery World Wax and Wane.
+	Retrieved September 26, 2016 from <A href = "http://sealevel.jpl.nasa.gov/newsroom/pressreleases/index.cfm?Fuseaction=ShowNews" target = '_blank'>http://sealevel.jpl.nasa.gov/newsroom/pressreleases/index.cfm?Fuseaction=ShowNews</A>
+	<BR><BR>
+	Bishop, N. (2012, June 26). Your Climate Solutions Expert: Carbon offsets, renewable energy credits, and carbon tracking services. Retrieved September 26, 2016 from  <A href = "http://www.nativeenergy.com/how-co2-pollution-is-affecting-life-in-the-ocean.html" target = '_blank'>http://http://www.nativeenergy.com/how-co2-pollution-is-affecting-life-in-the-ocean.html</A>
+	<BR><BR>
+	Society, N. G. (2015). 10 Things You Can Do to Save the Ocean -- National Geographic. Retrieved September 26, 2016 from  <A href = "http://ocean.nationalgeographic.com/ocean/take-action/10-things-you-can-do-to-save-the-ocean/" target = '_blank'>http://ocean.nationalgeographic.com/ocean/take-action/10-things-you-can-do-to-save-the-ocean/</A>
+	<BR><BR>
+	(2015). Did you know...? : Retrieved September 26, 2016 from <A href = "https://marinebio.org/marinebio/facts/" target = '_blank'>https://marinebio.org/marinebio/facts/</A>
+	<BR><BR>
+	Society, N. G. (2015). Marine Habitat Destruction -- National Geographic. Retrieved September 26, 2016 from <A href = "http://ocean.nationalgeographic.com/ocean/critical-issues-marine-habitat-destruction/" target = '_blank'>http://ocean.nationalgeographic.com/ocean/critical-issues-marine-habitat-destruction/</A>
+	<BR><BR>
+	NOAA Fisheries. (September 6, 2016). Endangered and Threatened Marine Species under NMFS' Jurisdiction. Retrieved October 14, 2016, from <A href = "http://www.nmfs.noaa.gov/pr/species/esa/listed.htm#fish" target = '_blank'>http://www.nmfs.noaa.gov/pr/species/esa/listed.htm#fish</A>
+	<BR><BR>
+	NOAA Fisheries. (September 6, 2016). Endangered and Threatened Marine Species under NMFS' Jurisdiction. Retrieved October 14, 2016, from 
+	<A href = "http://www.nmfs.noaa.gov/pr/species/esa/listed.htm#turtles" target = '_blank'>http://www.nmfs.noaa.gov/pr/species/esa/listed.htm#turtles</A>
+	<BR><BR>
+	Obama, B. E. (2015). Threatened and Endangered Species. Retrieved October 14, 2016, from <A href = "http://marinebio.org/oceans/threatened-endangered-species/" target = '_blank'>http://marinebio.org/oceans/threatened-endangered-species/</A>
+	</TD>
+	</TR>
+</TABLE>
+<IMG src = '65thfiw.png' id = 'background'>
+
+
+
+
+
+</BODY>
+</HTML>
